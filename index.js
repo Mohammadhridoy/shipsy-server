@@ -28,7 +28,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
+    
 
     const usrtypeCollection = client.db('shipsy').collection('user');
     const bookingsCollection = client.db('shipsy').collection('bookings')
